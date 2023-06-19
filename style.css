@@ -1,0 +1,134 @@
+html, body, textarea div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, abbr, code, img, dl, dt, dd, ol, ul, li, form, label, table, tr, th, td, footer, header, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+
+input { outline: none; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+body {
+  background-color: #262626;
+}
+
+.container {
+  margin: auto;
+  width: 320px;
+}
+
+.main {
+  width: 320px;
+  background-color: #ddd;
+  position: absolute;
+  top: 8%;
+  height: 525px;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search_bar {
+  width: 100%;
+  margin-top: 10px;
+  padding: 6px 0px;
+  position: relative;
+  display: flex;
+  border-bottom: 0.3px solid #b9b9b9;
+}
+
+.search_input {
+  background-color: inherit;
+  width: 85%;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.search_button {
+  background-color: inherit;
+  width: 15%;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search_suggestions {
+  background-color: #ddd;
+
+}
+
+.suggestion {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #b9b9b9;
+}
+
+.default_logo img {
+  display: block;
+  margin: auto;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 85%;
+}
+
+.weather_town {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.weather_town h2 {
+  font-size: 35px;
+}
+
+.weather_town p {
+  margin: 5px auto;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.weather_temp {
+  display: flex;
+  justify-content: center;
+}
+
+.weather_image {
+  width: 80px;
+}
+
+.weather_main_temp {
+  margin: auto 0;
+  font-size: 45px;
+}
+
+.weather_description {
+  margin-bottom: 7px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.weather_info {
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}

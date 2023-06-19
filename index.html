@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div id="search" class="search">
+                <div id="searchBar" class="search_bar">
+                    <input id="searchInput" type="text" class="search_input">
+                    <button id="searchButton" type="button" class="search_button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div id="searchSuggestions" class="search_suggestions" hidden></div>
+            </div>
+            <div id="defaultLogo" class="default_logo">
+                <img src="https://raw.githubusercontent.com/ioBroker/ioBroker.openweathermap/HEAD/admin/openweathermap.png" alt="Weather">
+            </div>
+            <div id="weather" style="height: 100%;" hidden>
+                <div class="weather">
+                    <div class="weather_town">
+                        <h2 id="cityName"></h2>
+                        <p id="cityState"></p>
+                    </div>
+                    <div class="weather_temp">
+                        <h3 id="weatherMainTemp" class="weather_main_temp">0°</h3>
+                        <img id="weatherImageTemp" class="weather_image" src="https://openweathermap.org/img/wn/10d@2x.png"/>
+                    </div>
+                    <div>
+                        <p id="weatherMain" class="weather_description">None</p>
+                        <p id="weatherFeelTemp" class="weather_description">Feels like 0°</p>
+                    </div>
+                    <div class="weather_info">
+                        <div class="weather_info_element">
+                            wind <hr> <b id="weatherInfoWind">0</b> m/s
+                        </div>
+                        <div class="weather_info_element">
+                            pressure <hr> <b id="weatherInfoPressure">0</b> mmHg
+                        </div>
+                        <div class="weather_info_element">
+                            humidity <hr> <b id="weatherInfoHumidity">0</b> %
+                        </div>
+                        <div class="weather_info_element">
+                            visibility <hr> <b id="weatherInfoVisibility">0</b> km
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+<script src="https://kit.fontawesome.com/ab9e9aca1a.js" crossorigin="anonymous"></script>
+</html>
